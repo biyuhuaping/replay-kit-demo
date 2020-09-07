@@ -1,0 +1,145 @@
+[
+    {
+        "models": [
+            "0220"
+        ],
+        "profile": "Smooth2.json"
+    },
+    {
+        "models": [
+            "0221"
+        ],
+        "profile": "SmoothQ.json"
+    },
+    {
+        "models": [
+            "0223"
+        ],
+        "profile": "SmoothQ2.json"
+    },
+    {
+        "models": [
+            "0226"
+        ],
+        "profile": "SM108.json"
+    },
+    {
+        "models": [
+            "0227"
+        ],
+        "profile": "SM110.json"
+    },
+    {
+        "models": [
+            "0222"
+        ],
+        "profile": "P1.json"
+    },
+    {
+        "models": [
+            "0230"
+        ],
+        "profile": "Smooth3.json"
+    },
+    {
+        "models": [
+            "0240"
+        ],
+        "profile": "Smooth4.json"
+    },
+    {
+        "models": [
+            "0512"
+        ],
+        "profile": "CraneM2.json"
+    },
+    {
+        "models": [
+            "0530"
+        ],
+        "profile": "Crane3Lab.json"
+    },
+    {
+		"models": [
+			"0531"
+		],
+		"profile": "WeebillLab.json"
+    },
+    {
+        "models": [
+            "0533",
+        ],
+        "profile": "WeebillS.json"
+    },
+    {
+        "models": [
+            "053A",
+        ],
+        "profile": "Crane3S.json"
+    },
+	{
+		"models": [
+			"0502",
+			"0503"
+		],
+		"profile": "CranePlus.json"
+    },
+    {
+		"models": [
+			"0510",
+			"0511"
+		],
+		"profile": "CraneM.json"
+    },
+    {
+		"models": [
+			"0520"
+		],
+		"profile": "Crane2.json"
+    },
+    {
+        "models": [
+            "0521"
+        ],
+        "profile": "Crane2S.json"
+    },
+    {
+		"models": [
+            "0500",
+            "0501"
+		],
+		"profile": "Crane.json"
+    },
+    {
+		"models": [
+            "0400"
+		],
+		"profile": "RiderM.json"
+    },
+    {
+        "models": [
+            "0410"
+        ],
+        "profile": "SM111.json"
+    },
+    {
+        "models": [
+            "0600",
+            "0602"
+        ],
+        "profile": "COV-1.json"
+    },
+    {
+        "models": [
+            "0224"
+        ],
+        "profile": "C11.json"
+    },
+    {
+        "models": [
+            "0320"
+        ],
+        "profile": "Ev103.json"
+    }
+    
+]

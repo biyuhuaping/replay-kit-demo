@@ -1,0 +1,14 @@
+{
+    "battery":3,
+    "bleMtu": 160,
+    "ccs": 0,
+    "update": 1,
+    "motionControl": 0,
+    "photo": 1,
+    "video": 1,
+    "digitalZoom": 1,
+    "moveline": 0,
+    "jsonData": 1,
+    "links": 2,
+    "carry": 1
+}

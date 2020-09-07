@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05294AAC8CE0802359F9F88D /* libPods-ScreenRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 203C5E50591310471F976A7B /* libPods-ScreenRecord.a */; };
+		61E892EC22A482302DE335ED /* libPods-ReplayKitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3982BE6D204D6FEB721A2C /* libPods-ReplayKitTest.a */; };
+		E43BDA802505CB0500E88FD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E43BDA7F2505CB0500E88FD7 /* AppDelegate.m */; };
+		E43BDA862505CB0500E88FD7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43BDA852505CB0500E88FD7 /* ViewController.m */; };
+		E43BDA892505CB0500E88FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43BDA872505CB0500E88FD7 /* Main.storyboard */; };
+		E43BDA8B2505CB0C00E88FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43BDA8A2505CB0C00E88FD7 /* Assets.xcassets */; };
+		E43BDA8E2505CB0C00E88FD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43BDA8C2505CB0C00E88FD7 /* LaunchScreen.storyboard */; };
+		E43BDA912505CB0C00E88FD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E43BDA902505CB0C00E88FD7 /* main.m */; };
+		E43BDA9E2505CBC100E88FD7 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43BDA9D2505CBC100E88FD7 /* ReplayKit.framework */; };
+		E43BDAA22505CBC100E88FD7 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E43BDAA12505CBC100E88FD7 /* SampleHandler.m */; };
+		E43BDAA92505CBC100E88FD7 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43BDA9D2505CBC100E88FD7 /* ReplayKit.framework */; };
+		E43BDAAB2505CBC100E88FD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43BDAAA2505CBC100E88FD7 /* UIKit.framework */; };
+		E43BDAAF2505CBC100E88FD7 /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43BDAAE2505CBC100E88FD7 /* BroadcastSetupViewController.m */; };
+		E43BDAB32505CBC100E88FD7 /* ScreenRecordSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E43BDAA82505CBC100E88FD7 /* ScreenRecordSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E43BDAB62505CBC100E88FD7 /* ZY Cami.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E43BDA9B2505CBC100E88FD7 /* ZY Cami.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E453BE342505CD2F0089D71C /* ZFUploadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E453BE312505CD2F0089D71C /* ZFUploadTool.m */; };
+		E453BE352505CD2F0089D71C /* ZYFaceTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = E453BE332505CD2F0089D71C /* ZYFaceTrack.m */; };
+		E453BE372505D2290089D71C /* blank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E453BE362505D2290089D71C /* blank.mp3 */; };
+		E453BE392505D2630089D71C /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = E453BE382505D2630089D71C /* test.wav */; };
+		E453BE3C25061BE00089D71C /* ZYImageTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E453BE3A25061BC10089D71C /* ZYImageTools.framework */; };
+		E453BE3D25061BE00089D71C /* ZYImageTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E453BE3A25061BC10089D71C /* ZYImageTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2FFE05303F8A0BB8AEF8EFB /* libPods-ScreenRecordSetupUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6097C86EEEB458FA731D8CF2 /* libPods-ScreenRecordSetupUI.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E43BDAB12505CBC100E88FD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43BDA732505CB0500E88FD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43BDAA72505CBC100E88FD7;
+			remoteInfo = ScreenRecordSetupUI;
+		};
+		E43BDAB42505CBC100E88FD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43BDA732505CB0500E88FD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43BDA9A2505CBC100E88FD7;
+			remoteInfo = ScreenRecord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E43BDABD2505CBC100E88FD7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E43BDAB32505CBC100E88FD7 /* ScreenRecordSetupUI.appex in Embed App Extensions */,
+				E43BDAB62505CBC100E88FD7 /* ZY Cami.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E453BE3E25061BE00089D71C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E453BE3D25061BE00089D71C /* ZYImageTools.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		158206949D42D2BC30A25EA7 /* Pods-ScreenRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenRecord.release.xcconfig"; path = "Target Support Files/Pods-ScreenRecord/Pods-ScreenRecord.release.xcconfig"; sourceTree = "<group>"; };
+		203C5E50591310471F976A7B /* libPods-ScreenRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScreenRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6097C86EEEB458FA731D8CF2 /* libPods-ScreenRecordSetupUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScreenRecordSetupUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BC1B8C2070B0DE3E11538F /* Pods-ScreenRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenRecord.debug.xcconfig"; path = "Target Support Files/Pods-ScreenRecord/Pods-ScreenRecord.debug.xcconfig"; sourceTree = "<group>"; };
+		B3F51051AC470E576768020B /* Pods-ReplayKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplayKitTest.debug.xcconfig"; path = "Target Support Files/Pods-ReplayKitTest/Pods-ReplayKitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CE3982BE6D204D6FEB721A2C /* libPods-ReplayKitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReplayKitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BD904609ED73432D9CE7EF /* Pods-ScreenRecordSetupUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenRecordSetupUI.release.xcconfig"; path = "Target Support Files/Pods-ScreenRecordSetupUI/Pods-ScreenRecordSetupUI.release.xcconfig"; sourceTree = "<group>"; };
+		E43BDA7B2505CB0500E88FD7 /* ReplayKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplayKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43BDA7E2505CB0500E88FD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E43BDA7F2505CB0500E88FD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E43BDA842505CB0500E88FD7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E43BDA852505CB0500E88FD7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E43BDA882505CB0500E88FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E43BDA8A2505CB0C00E88FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E43BDA8D2505CB0C00E88FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E43BDA8F2505CB0C00E88FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43BDA902505CB0C00E88FD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E43BDA9B2505CBC100E88FD7 /* ZY Cami.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ZY Cami.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43BDA9D2505CBC100E88FD7 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		E43BDAA02505CBC100E88FD7 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		E43BDAA12505CBC100E88FD7 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		E43BDAA32505CBC100E88FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43BDAA82505CBC100E88FD7 /* ScreenRecordSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenRecordSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43BDAAA2505CBC100E88FD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E43BDAAD2505CBC100E88FD7 /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		E43BDAAE2505CBC100E88FD7 /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		E43BDAB02505CBC100E88FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E453BE2E2505CCFF0089D71C /* ReplayKitTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReplayKitTest.entitlements; sourceTree = "<group>"; };
+		E453BE2F2505CD060089D71C /* ScreenRecord.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenRecord.entitlements; sourceTree = "<group>"; };
+		E453BE302505CD2F0089D71C /* ZFUploadTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFUploadTool.h; sourceTree = "<group>"; };
+		E453BE312505CD2F0089D71C /* ZFUploadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFUploadTool.m; sourceTree = "<group>"; };
+		E453BE322505CD2F0089D71C /* ZYFaceTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYFaceTrack.h; sourceTree = "<group>"; };
+		E453BE332505CD2F0089D71C /* ZYFaceTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYFaceTrack.m; sourceTree = "<group>"; };
+		E453BE362505D2290089D71C /* blank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blank.mp3; sourceTree = "<group>"; };
+		E453BE382505D2630089D71C /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		E453BE3A25061BC10089D71C /* ZYImageTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZYImageTools.framework; sourceTree = "<group>"; };
+		F30C26C09B1F9DB3E3B90D96 /* Pods-ScreenRecordSetupUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenRecordSetupUI.debug.xcconfig"; path = "Target Support Files/Pods-ScreenRecordSetupUI/Pods-ScreenRecordSetupUI.debug.xcconfig"; sourceTree = "<group>"; };
+		F38C1FC57715964EB3FC5622 /* Pods-ReplayKitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplayKitTest.release.xcconfig"; path = "Target Support Files/Pods-ReplayKitTest/Pods-ReplayKitTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E43BDA782505CB0500E88FD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E892EC22A482302DE335ED /* libPods-ReplayKitTest.a in Frameworks */,
+				E453BE3C25061BE00089D71C /* ZYImageTools.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BDA982505CBC100E88FD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43BDA9E2505CBC100E88FD7 /* ReplayKit.framework in Frameworks */,
+				05294AAC8CE0802359F9F88D /* libPods-ScreenRecord.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BDAA52505CBC100E88FD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43BDAA92505CBC100E88FD7 /* ReplayKit.framework in Frameworks */,
+				E43BDAAB2505CBC100E88FD7 /* UIKit.framework in Frameworks */,
+				F2FFE05303F8A0BB8AEF8EFB /* libPods-ScreenRecordSetupUI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82843355D607642102D28DD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3F51051AC470E576768020B /* Pods-ReplayKitTest.debug.xcconfig */,
+				F38C1FC57715964EB3FC5622 /* Pods-ReplayKitTest.release.xcconfig */,
+				86BC1B8C2070B0DE3E11538F /* Pods-ScreenRecord.debug.xcconfig */,
+				158206949D42D2BC30A25EA7 /* Pods-ScreenRecord.release.xcconfig */,
+				F30C26C09B1F9DB3E3B90D96 /* Pods-ScreenRecordSetupUI.debug.xcconfig */,
+				D5BD904609ED73432D9CE7EF /* Pods-ScreenRecordSetupUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E43BDA722505CB0500E88FD7 = {
+			isa = PBXGroup;
+			children = (
+				E43BDA7D2505CB0500E88FD7 /* ReplayKitTest */,
+				E43BDA9F2505CBC100E88FD7 /* ScreenRecord */,
+				E43BDAAC2505CBC100E88FD7 /* ScreenRecordSetupUI */,
+				E43BDA9C2505CBC100E88FD7 /* Frameworks */,
+				E43BDA7C2505CB0500E88FD7 /* Products */,
+				82843355D607642102D28DD2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E43BDA7C2505CB0500E88FD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E43BDA7B2505CB0500E88FD7 /* ReplayKitTest.app */,
+				E43BDA9B2505CBC100E88FD7 /* ZY Cami.appex */,
+				E43BDAA82505CBC100E88FD7 /* ScreenRecordSetupUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E43BDA7D2505CB0500E88FD7 /* ReplayKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				E453BE3A25061BC10089D71C /* ZYImageTools.framework */,
+				E453BE382505D2630089D71C /* test.wav */,
+				E453BE362505D2290089D71C /* blank.mp3 */,
+				E453BE2E2505CCFF0089D71C /* ReplayKitTest.entitlements */,
+				E43BDA7E2505CB0500E88FD7 /* AppDelegate.h */,
+				E43BDA7F2505CB0500E88FD7 /* AppDelegate.m */,
+				E43BDA842505CB0500E88FD7 /* ViewController.h */,
+				E43BDA852505CB0500E88FD7 /* ViewController.m */,
+				E43BDA872505CB0500E88FD7 /* Main.storyboard */,
+				E43BDA8A2505CB0C00E88FD7 /* Assets.xcassets */,
+				E43BDA8C2505CB0C00E88FD7 /* LaunchScreen.storyboard */,
+				E43BDA8F2505CB0C00E88FD7 /* Info.plist */,
+				E43BDA902505CB0C00E88FD7 /* main.m */,
+			);
+			path = ReplayKitTest;
+			sourceTree = "<group>";
+		};
+		E43BDA9C2505CBC100E88FD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E43BDA9D2505CBC100E88FD7 /* ReplayKit.framework */,
+				E43BDAAA2505CBC100E88FD7 /* UIKit.framework */,
+				CE3982BE6D204D6FEB721A2C /* libPods-ReplayKitTest.a */,
+				203C5E50591310471F976A7B /* libPods-ScreenRecord.a */,
+				6097C86EEEB458FA731D8CF2 /* libPods-ScreenRecordSetupUI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E43BDA9F2505CBC100E88FD7 /* ScreenRecord */ = {
+			isa = PBXGroup;
+			children = (
+				E453BE2F2505CD060089D71C /* ScreenRecord.entitlements */,
+				E453BE302505CD2F0089D71C /* ZFUploadTool.h */,
+				E453BE312505CD2F0089D71C /* ZFUploadTool.m */,
+				E453BE322505CD2F0089D71C /* ZYFaceTrack.h */,
+				E453BE332505CD2F0089D71C /* ZYFaceTrack.m */,
+				E43BDAA02505CBC100E88FD7 /* SampleHandler.h */,
+				E43BDAA12505CBC100E88FD7 /* SampleHandler.m */,
+				E43BDAA32505CBC100E88FD7 /* Info.plist */,
+			);
+			path = ScreenRecord;
+			sourceTree = "<group>";
+		};
+		E43BDAAC2505CBC100E88FD7 /* ScreenRecordSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				E43BDAAD2505CBC100E88FD7 /* BroadcastSetupViewController.h */,
+				E43BDAAE2505CBC100E88FD7 /* BroadcastSetupViewController.m */,
+				E43BDAB02505CBC100E88FD7 /* Info.plist */,
+			);
+			path = ScreenRecordSetupUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E43BDA7A2505CB0500E88FD7 /* ReplayKitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43BDA942505CB0C00E88FD7 /* Build configuration list for PBXNativeTarget "ReplayKitTest" */;
+			buildPhases = (
+				057B0404CFE49C0E0000294D /* [CP] Check Pods Manifest.lock */,
+				E43BDA772505CB0500E88FD7 /* Sources */,
+				E43BDA782505CB0500E88FD7 /* Frameworks */,
+				E43BDA792505CB0500E88FD7 /* Resources */,
+				E43BDABD2505CBC100E88FD7 /* Embed App Extensions */,
+				9D269A50B88155947521F332 /* [CP] Copy Pods Resources */,
+				E453BE3E25061BE00089D71C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E43BDAB22505CBC100E88FD7 /* PBXTargetDependency */,
+				E43BDAB52505CBC100E88FD7 /* PBXTargetDependency */,
+			);
+			name = ReplayKitTest;
+			productName = ReplayKitTest;
+			productReference = E43BDA7B2505CB0500E88FD7 /* ReplayKitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E43BDA9A2505CBC100E88FD7 /* ScreenRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43BDABA2505CBC100E88FD7 /* Build configuration list for PBXNativeTarget "ScreenRecord" */;
+			buildPhases = (
+				B80A12E7BC2FF8123B2C0E97 /* [CP] Check Pods Manifest.lock */,
+				E43BDA972505CBC100E88FD7 /* Sources */,
+				E43BDA982505CBC100E88FD7 /* Frameworks */,
+				E43BDA992505CBC100E88FD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenRecord;
+			productName = ScreenRecord;
+			productReference = E43BDA9B2505CBC100E88FD7 /* ZY Cami.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E43BDAA72505CBC100E88FD7 /* ScreenRecordSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43BDAB72505CBC100E88FD7 /* Build configuration list for PBXNativeTarget "ScreenRecordSetupUI" */;
+			buildPhases = (
+				985617BBECA9B6D72E45A998 /* [CP] Check Pods Manifest.lock */,
+				E43BDAA42505CBC100E88FD7 /* Sources */,
+				E43BDAA52505CBC100E88FD7 /* Frameworks */,
+				E43BDAA62505CBC100E88FD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenRecordSetupUI;
+			productName = ScreenRecordSetupUI;
+			productReference = E43BDAA82505CBC100E88FD7 /* ScreenRecordSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E43BDA732505CB0500E88FD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = ZHIYUN;
+				TargetAttributes = {
+					E43BDA7A2505CB0500E88FD7 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					E43BDA9A2505CBC100E88FD7 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					E43BDAA72505CBC100E88FD7 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E43BDA762505CB0500E88FD7 /* Build configuration list for PBXProject "ReplayKitTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E43BDA722505CB0500E88FD7;
+			productRefGroup = E43BDA7C2505CB0500E88FD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E43BDA7A2505CB0500E88FD7 /* ReplayKitTest */,
+				E43BDA9A2505CBC100E88FD7 /* ScreenRecord */,
+				E43BDAA72505CBC100E88FD7 /* ScreenRecordSetupUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E43BDA792505CB0500E88FD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43BDA8E2505CB0C00E88FD7 /* LaunchScreen.storyboard in Resources */,
+				E43BDA8B2505CB0C00E88FD7 /* Assets.xcassets in Resources */,
+				E43BDA892505CB0500E88FD7 /* Main.storyboard in Resources */,
+				E453BE372505D2290089D71C /* blank.mp3 in Resources */,
+				E453BE392505D2630089D71C /* test.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BDA992505CBC100E88FD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BDAA62505CBC100E88FD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		057B0404CFE49C0E0000294D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReplayKitTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		985617BBECA9B6D72E45A998 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenRecordSetupUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D269A50B88155947521F332 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReplayKitTest/Pods-ReplayKitTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReplayKitTest/Pods-ReplayKitTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReplayKitTest/Pods-ReplayKitTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B80A12E7BC2FF8123B2C0E97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenRecord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E43BDA772505CB0500E88FD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43BDA862505CB0500E88FD7 /* ViewController.m in Sources */,
+				E43BDA802505CB0500E88FD7 /* AppDelegate.m in Sources */,
+				E43BDA912505CB0C00E88FD7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BDA972505CBC100E88FD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E453BE352505CD2F0089D71C /* ZYFaceTrack.m in Sources */,
+				E453BE342505CD2F0089D71C /* ZFUploadTool.m in Sources */,
+				E43BDAA22505CBC100E88FD7 /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BDAA42505CBC100E88FD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43BDAAF2505CBC100E88FD7 /* BroadcastSetupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E43BDAB22505CBC100E88FD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43BDAA72505CBC100E88FD7 /* ScreenRecordSetupUI */;
+			targetProxy = E43BDAB12505CBC100E88FD7 /* PBXContainerItemProxy */;
+		};
+		E43BDAB52505CBC100E88FD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43BDA9A2505CBC100E88FD7 /* ScreenRecord */;
+			targetProxy = E43BDAB42505CBC100E88FD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E43BDA872505CB0500E88FD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43BDA882505CB0500E88FD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E43BDA8C2505CB0C00E88FD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43BDA8D2505CB0C00E88FD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E43BDA922505CB0C00E88FD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E43BDA932505CB0C00E88FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E43BDA952505CB0C00E88FD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F51051AC470E576768020B /* Pods-ReplayKitTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReplayKitTest/ReplayKitTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQFEA2B5H2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReplayKitTest",
+				);
+				INFOPLIST_FILE = ReplayKitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyun.ZYLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E43BDA962505CB0C00E88FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38C1FC57715964EB3FC5622 /* Pods-ReplayKitTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReplayKitTest/ReplayKitTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQFEA2B5H2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReplayKitTest",
+				);
+				INFOPLIST_FILE = ReplayKitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyun.ZYLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E43BDAB82505CBC100E88FD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F30C26C09B1F9DB3E3B90D96 /* Pods-ScreenRecordSetupUI.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQFEA2B5H2;
+				INFOPLIST_FILE = ScreenRecordSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyun.ZYLive.ScreenRecordSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E43BDAB92505CBC100E88FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BD904609ED73432D9CE7EF /* Pods-ScreenRecordSetupUI.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQFEA2B5H2;
+				INFOPLIST_FILE = ScreenRecordSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyun.ZYLive.ScreenRecordSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E43BDABB2505CBC100E88FD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86BC1B8C2070B0DE3E11538F /* Pods-ScreenRecord.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenRecord/ScreenRecord.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQFEA2B5H2;
+				INFOPLIST_FILE = ScreenRecord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyun.ZYLive.ScreenRecord;
+				PRODUCT_NAME = "ZY Cami";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E43BDABC2505CBC100E88FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158206949D42D2BC30A25EA7 /* Pods-ScreenRecord.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenRecord/ScreenRecord.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQFEA2B5H2;
+				INFOPLIST_FILE = ScreenRecord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyun.ZYLive.ScreenRecord;
+				PRODUCT_NAME = "ZY Cami";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E43BDA762505CB0500E88FD7 /* Build configuration list for PBXProject "ReplayKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43BDA922505CB0C00E88FD7 /* Debug */,
+				E43BDA932505CB0C00E88FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43BDA942505CB0C00E88FD7 /* Build configuration list for PBXNativeTarget "ReplayKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43BDA952505CB0C00E88FD7 /* Debug */,
+				E43BDA962505CB0C00E88FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43BDAB72505CBC100E88FD7 /* Build configuration list for PBXNativeTarget "ScreenRecordSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43BDAB82505CBC100E88FD7 /* Debug */,
+				E43BDAB92505CBC100E88FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43BDABA2505CBC100E88FD7 /* Build configuration list for PBXNativeTarget "ScreenRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43BDABB2505CBC100E88FD7 /* Debug */,
+				E43BDABC2505CBC100E88FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E43BDA732505CB0500E88FD7 /* Project object */;
+}

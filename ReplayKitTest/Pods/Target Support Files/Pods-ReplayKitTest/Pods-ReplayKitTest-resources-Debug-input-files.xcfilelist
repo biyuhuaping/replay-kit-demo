@@ -1,0 +1,26 @@
+${PODS_ROOT}/Target Support Files/Pods-ReplayKitTest/Pods-ReplayKitTest-resources.sh
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/C11.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/COV-1.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/Crane.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/Crane2.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/Crane2S.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/Crane3Lab.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/Crane3S.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/CraneM.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/CraneM2.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/CranePlus.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/Ev103.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/list.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/P1.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/RiderM.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/SM108.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/SM110.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/SM111.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/Smooth2.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/Smooth3.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/Smooth4.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/SmoothQ.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/SmoothQ2.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/WeebillLab.json
+${PODS_ROOT}/ZYCodeTools/ZYCodeTools/ProductConfigManager/productionJsonManager/WeebillS.json
+${PODS_CONFIGURATION_BUILD_DIR}/ZYCodeTools/productionJsonManager.bundle

@@ -1,0 +1,21 @@
+ [
+  {"title":"LCD timeout sleep","queryCode":"51","queryValue":"0","content":"No sleep","HERO5":"YES","HERO6":"YES"},
+  {"title":"LCD timeout sleep","queryCode":"51","queryValue":"1","content":"1min","HERO5":"YES","HERO6":"YES"},
+  {"title":"LCD timeout sleep","queryCode":"51","queryValue":"2","content":"2min","HERO5":"YES","HERO6":"YES"},
+  {"title":"LCD timeout sleep","queryCode":"51","queryValue":"3","content":"3min","HERO5":"YES","HERO6":"YES"},
+  {"title":"Default start up mode","queryCode":"89","queryValue":"12","content":"video","HERO5":"YES","HERO6":"YES"},
+  {"title":"Default start up mode","queryCode":"89","queryValue":"13","content":"Time-lapse video","HERO5":"YES","HERO6":"YES"},
+  {"title":"Default start up mode","queryCode":"89","queryValue":"14","content":"Video + photo","HERO5":"YES","HERO6":"-----"},
+  {"title":"Default start up mode","queryCode":"89","queryValue":"15","content":"Loop recording","HERO5":"YES","HERO6":"YES"},
+  {"title":"Default start up mode","queryCode":"89","queryValue":"17","content":"photo","HERO5":"YES","HERO6":"YES"},
+  {"title":"Default start up mode","queryCode":"89","queryValue":"18","content":"Night shot","HERO5":"YES","HERO6":"YES"},
+  {"title":"Default start up mode","queryCode":"89","queryValue":"19","content":"Continuous shooting","HERO5":"YES","HERO6":"YES"},
+  {"title":"Default start up mode","queryCode":"89","queryValue":"20","content":"Time-lapse photo","HERO5":"YES","HERO6":"YES"},
+  {"title":"Default start up mode","queryCode":"89","queryValue":"21","content":"Night time-lapse photo","HERO5":"YES","HERO6":"YES"},
+  {"title":"Video format","queryCode":"57","queryValue":"0","content":"NTSC","HERO5":"YES","HERO6":"YES"},
+  {"title":"Video format","queryCode":"57","queryValue":"1","content":"PAL","HERO5":"YES","HERO6":"YES"},
+  {"title":"Auto shut down","queryCode":"59","queryValue":"0","content":"Never","HERO5":"YES","HERO6":"YES"},
+  {"title":"Auto shut down","queryCode":"59","queryValue":"4","content":"5min","HERO5":"YES","HERO6":"YES"},
+  {"title":"Auto shut down","queryCode":"59","queryValue":"6","content":"15min","HERO5":"YES","HERO6":"YES"},
+  {"title":"Auto shut down","queryCode":"59","queryValue":"7","content":"30min","HERO5":"YES","HERO6":"YES"}
+  ]

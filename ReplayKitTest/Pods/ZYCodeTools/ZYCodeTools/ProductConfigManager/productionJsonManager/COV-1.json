@@ -1,0 +1,16 @@
+{
+    "battery":1,
+    "bleMtu": 20,
+    "ccs": 1,
+    "update": 3,
+    "motionControl": 1,
+    "photo": 0,
+    "video": 0,
+    "digitalZoom": 0,
+    "moveline": 256,
+    "jsonData": 1,
+    "links": 3,
+    "carry": 0,
+    "wifichannel": 1,
+    "wifimodel": 0
+}

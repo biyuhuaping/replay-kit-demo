@@ -1,0 +1,22 @@
+{
+    "battery":3,
+    "bleMtu": 180,
+    "ccs": 1,
+    "update": 1,
+    "motionControl": 1,
+    "photo": 1,
+    "video": 1,
+    "digitalZoom": 0,
+    "moveline": 0,
+    "jsonData": 0,
+    "links": 4,
+    "carry": 0,
+    "ble_hid": 0,
+    "tracking": 1,
+    "autotune":1,
+    "motorStrength":[0,1,2],
+    "cameraList":[0,1,2,3,4,5,6,7,10,11,12],
+    "activate": 1,
+    "activateAESkey":"8ACF8157C2A6BCA422F8B5305808AF02E1B02E607C040992DE32BFE9A7AD0E00",
+    "resetPosition": 1
+}

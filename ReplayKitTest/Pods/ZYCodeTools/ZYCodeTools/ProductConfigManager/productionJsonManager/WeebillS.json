@@ -1,0 +1,17 @@
+{
+    "battery":2,
+    "bleMtu": 180,
+    "ccs": 1,
+    "update": 1,
+    "motionControl": 1,
+    "photo": 1,
+    "video": 1,
+    "digitalZoom": 0,
+    "moveline": 0,
+    "jsonData": 0,
+    "links": 4,
+    "carry": 0,
+	"ble_hid": 0,
+	"tracking": 1,
+    "cameraList":[0]
+}
