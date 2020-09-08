@@ -57,20 +57,50 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
     return self;
 }
 
-static void callback(ZYFaceInfo *infos, unsigned int count, void *pUser) {
-    for(int i=0;i<count;i++) {
-        NSLog(@"%@", NSStringFromCGRect(infos[i].rect));
-                
-        NSString *str = [NSString stringWithFormat:@"%@", NSStringFromCGRect(infos[i].rect)];
-        
-        NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
-        [shared setObject:str forKey:@"faceInfo"];
-        
-        [shared synchronize];
-        
-        CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(),CFSTR("processSampleBuffer"),NULL,nil,YES);
+//static void callback(ZYFaceInfo *infos, unsigned int count, void *pUser) {
+//    if(!infos) return;
+//    CGRect maxRect = infos[0].rect;
+//    for(int i = 0; i < count; i++) {
+//        CGRect rect = infos[i].rect;
+//        if(CGSize1LargeThanSize2(rect.size, maxRect.size)) {
+//            maxRect = rect;
+//        }
+//    }
+//
+//    NSString *str = [NSString stringWithFormat:@"%@", NSStringFromCGRect(maxRect)];
+//    NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+//    [shared setObject:str forKey:@"faceInfo"];
+//    [shared synchronize];
+//
+//    CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(),CFSTR("processSampleBuffer"),NULL,nil,YES);
+//}
 
+static void callback(ZYFaceInfo *infos, unsigned int count, void *pUser) {
+    if(count > 0) {
+        for(int i=0;i<count;i++) {
+            NSLog(@"%@", NSStringFromCGRect(infos[i].rect));
+            NSLog(@"faceId = %s", infos[i].faceID);
+
+            NSString *str = [NSString stringWithFormat:@"%@", NSStringFromCGRect(infos[i].rect)];
+
+            NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+            [shared setObject:str forKey:@"faceInfo"];
+            [shared synchronize];
+
+            CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(),CFSTR("processSampleBuffer"),NULL,nil,YES);
+        }
+    } else {
+        NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+        [shared setObject:nil forKey:@"faceInfo"];
+        [shared synchronize];
     }
+}
+
+bool CGSize1LargeThanSize2(CGSize size1, CGSize size2) {
+    if(size1.width > size2.width && size1.height > size2.height) {
+        return YES;
+    }
+    return NO;
 }
 
 - (void)prepareToStart:(NSDictionary *)dict {

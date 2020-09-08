@@ -28,11 +28,9 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    NSLog(@"main project pid %d", getpid());
 
     [self addNotification];
     [self start];
-//    [self startRecordInApp];
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 300, 100, 40)];
     [btn setTitle:@"Stop" forState:UIControlStateNormal];
@@ -65,7 +63,9 @@
     
 //    [[RPScreenRecorder sharedRecorder] stopCaptureWithHandler:nil];
     
-    [self.broadcastController pauseBroadcast];
+    [self.broadcastController finishBroadcastWithHandler:^(NSError * _Nullable error) {
+        
+    }];
 
 }
 
@@ -98,11 +98,9 @@ void observerMethod(CFNotificationCenterRef center, void *observer, CFStringRef 
         
         NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
         NSString *faceInfo = [shared objectForKey:@"faceInfo"];
+        NSString *frameSize = [shared objectForKey:@"frameSize"];
         CGRect faceRect = CGRectFromString(faceInfo);
-        
-        CGSize srcSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width * 2,
-                                    UIScreen.mainScreen.bounds.size.height * 2);
-        
+        CGSize srcSize = CGSizeFromString(frameSize);
         
         if(faceInfo.length > 0) {
             ViewController *vc = (__bridge ViewController *)observer;
@@ -117,27 +115,11 @@ void observerMethod(CFNotificationCenterRef center, void *observer, CFStringRef 
 - (CGRect)coverFrame:(CGRect)faceRect srcSize:(CGSize)srcSize {
     CGRect returnRect = CGRectZero;
     
-    CGFloat width = srcSize.width > srcSize.height?srcSize.width:srcSize.height;
-    CGFloat height = srcSize.width > srcSize.height?srcSize.height:srcSize.width;
+    CGFloat faceCenterX = faceRect.origin.x + faceRect.size.width * 0.5;
+    CGFloat faceCenterY = faceRect.origin.y + faceRect.size.height * 0.5;
     
-    CGFloat ret_Width = width*faceRect.size.width;
-    CGFloat ret_height = height*faceRect.size.height;
-    CGFloat ret_X = width*faceRect.origin.x;
-    CGFloat ret_Y = height*faceRect.origin.y;
+    returnRect = CGRectMake(faceCenterX, faceCenterY, faceRect.size.width, faceRect.size.height);
     
-    CGRect rectCon = CGRectMake(height - ret_Y - ret_height, ret_X, ret_height, ret_Width);
-    
-    CGPoint centerCon = CGPointMake(rectCon.origin.x + rectCon.size.width / 2, rectCon.origin.y + rectCon.size.width / 2);
-    
-    CGFloat distanceTemp = fabs(width / 2 - centerCon.x);
-    if (CGRectEqualToRect(CGRectZero, returnRect)) {
-        returnRect = rectCon;
-    }
-//    if (distanceTemp < distance) {
-//        returnRect = rectCon;
-//        distance = distanceTemp;
-//    }
-    NSLog(@"fm cover frame %@", NSStringFromCGRect(returnRect));
     return returnRect;
 }
 
@@ -157,7 +139,7 @@ void observerMethod(CFNotificationCenterRef center, void *observer, CFStringRef 
         _broadPickerView.preferredExtension = @"com.zhiyun.ZYLive.ScreenRecord";
         [self.view addSubview:_broadPickerView];
     } else {
-        NSLog(@"低于12的系统的用法，需要手动选择扩展程序启动");
+        NSLog(@"iOS11的系统需要手动选择扩展程序启动，iOS11以下不支持");
     }
 }
 
@@ -192,37 +174,21 @@ void observerMethod(CFNotificationCenterRef center, void *observer, CFStringRef 
 
 - (void)moveStabilizer:(CGPoint)point srcSize:(CGSize)srcSize {
     if ([[ZYDeviceManager defaultManager].stablizerDevice newtrackingCodeSupport]) {
-        float yawT = (point.x / srcSize.width) * 1000;
-        float pitchT = (point.y / srcSize.height) * 1000;
+        float yawT = point.x * 1000; // 航向轴
+        if(yawT > 1000) {
+            yawT = 1000.0;
+        }
+        if(yawT < 0) {
+            yawT = 0.0;
+        }
+        yawT = 1000 - yawT;
         
-        yawT = [self p_newTrackfixFrontValue:yawT];
-        
-        float temp = pitchT;
-        pitchT = 1000 - yawT;
-        yawT = 1000 - temp;
-        
+        // 全锁定模式才能跟踪
         [[ZYDeviceManager defaultManager].stablizerDevice.motionManager tracckMove:500 yaw:yawT compeletion:^(BOOL success) {
             
         }];
     }
 }
-
-- (float)p_newTrackfixFrontValue:(float)value{
-    if (1) {
-        BOOL isFront = YES;
-        if (isFront) {
-            if (value > 1000) {
-                value = 1000;
-            }
-            else if(value < 0){
-                value = 0;
-            }
-            value = 1000 -value;
-        }
-    }
-    return value;
-}
-
 
 - (ZYMovingTracker *)tracker{
     if (_tracker == nil) {

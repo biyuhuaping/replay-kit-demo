@@ -18,7 +18,7 @@ BOOL getSize = NO;
 @implementation SampleHandler
 
 - (void)broadcastStartedWithSetupInfo:(NSDictionary<NSString *,NSObject *> *)setupInfo {
-    // 用户已请求开始广播。可以提供来自UI扩展程序的设置信息，但是可选的
+    // 用户已请求开始广播。可以提供来自UI扩展程序的设置信息，是可选的
     // User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional.
 //    NSLog(@"%s", __func__);
     
@@ -56,10 +56,9 @@ BOOL getSize = NO;
 }
 
 /**
- 实时获取视频和音频流数据
+ 实时获取视频和音频流数据，73帧左右/每秒
  */
 - (void)processSampleBuffer:(CMSampleBufferRef)sampleBuffer withType:(RPSampleBufferType)sampleBufferType {
-//    NSLog(@"%s", __func__);
     CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(),CFSTR("processSampleBuffer"),NULL,nil,YES);
     switch (sampleBufferType) {
         case RPSampleBufferTypeVideo: {
@@ -82,6 +81,7 @@ BOOL getSize = NO;
             if(jump++ % 2) {
                 [ZFUploadTool.shareTool.faceTrack checkFace:imageBuffer];
             }
+            
             // 推流
 //            [ZFUploadTool.shareTool sendVideoBuffer:sampleBuffer];
         }
