@@ -68,7 +68,7 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
 //    }
 //
 //    NSString *str = [NSString stringWithFormat:@"%@", NSStringFromCGRect(maxRect)];
-//    NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+//    NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.yes.GanodermaDiagnosis"];
 //    [shared setObject:str forKey:@"faceInfo"];
 //    [shared synchronize];
 //
@@ -83,14 +83,14 @@ static void callback(ZYFaceInfo *infos, unsigned int count, void *pUser) {
 
             NSString *str = [NSString stringWithFormat:@"%@", NSStringFromCGRect(infos[i].rect)];
 
-            NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+            NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.yes.GanodermaDiagnosis"];
             [shared setObject:str forKey:@"faceInfo"];
             [shared synchronize];
 
             CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(),CFSTR("processSampleBuffer"),NULL,nil,YES);
         }
     } else {
-        NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+        NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.yes.GanodermaDiagnosis"];
         [shared setObject:nil forKey:@"faceInfo"];
         [shared synchronize];
     }

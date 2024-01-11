@@ -18,94 +18,15 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - LFLiveKit-ReplayKit (0.0.1)
-  - SSZipArchive (2.2.3)
-  - ZYCodeTools (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-    - ZYCodeTools/BabyBluetooth (= 1.0.74)
-    - ZYCodeTools/BLEConnection (= 1.0.74)
-    - ZYCodeTools/HardwareUpgrade (= 1.0.74)
-    - ZYCodeTools/NewAddCode (= 1.0.74)
-    - ZYCodeTools/Other (= 1.0.74)
-    - ZYCodeTools/ProductConfigManager (= 1.0.74)
-    - ZYCodeTools/ZYWIFITools (= 1.0.74)
-  - ZYCodeTools/BabyBluetooth (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-    - ZYCodeTools/BabyBluetooth/Classes (= 1.0.74)
-  - ZYCodeTools/BabyBluetooth/Classes (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/BLEConnection (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-    - ZYCodeTools/BLEConnection/config (= 1.0.74)
-    - ZYCodeTools/BLEConnection/model (= 1.0.74)
-    - ZYCodeTools/BLEConnection/parse (= 1.0.74)
-  - ZYCodeTools/BLEConnection/config (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/BLEConnection/model (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/BLEConnection/parse (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/HardwareUpgrade (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/NewAddCode (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-    - ZYCodeTools/NewAddCode/NewOtherCode (= 1.0.74)
-    - ZYCodeTools/NewAddCode/StoryCode (= 1.0.74)
-  - ZYCodeTools/NewAddCode/NewOtherCode (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/NewAddCode/StoryCode (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/Other (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-    - ZYCodeTools/Other/StabilizerManager (= 1.0.74)
-    - ZYCodeTools/Other/ZYDeviceBase (= 1.0.74)
-  - ZYCodeTools/Other/StabilizerManager (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/Other/ZYDeviceBase (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/ProductConfigManager (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
-  - ZYCodeTools/ZYWIFITools (1.0.74):
-    - AFNetworking
-    - FMDB
-    - SSZipArchive
+  - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
+  - AFNetworking
+  - FMDB
   - LFLiveKit-ReplayKit
-  - ZYCodeTools (= 1.0.74)
+  - SSZipArchive
 
 SPEC REPOS:
-  https://gitee.com/ZhiYunRuanJianShenChou/ZYPodSpecs.git:
-    - ZYCodeTools
   trunk:
     - AFNetworking
     - FMDB
@@ -113,12 +34,11 @@ SPEC REPOS:
     - SSZipArchive
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   LFLiveKit-ReplayKit: 41197ffbd60306d10632543f822810d4f5835d77
-  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
-  ZYCodeTools: 69bbd02c8bc67beb11894d03a10ea9f5b83b3eea
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: e4852f3256091a21b6ac67bbc8b3219e215fbd9a
+PODFILE CHECKSUM: 1018bc567e81c71d1bae789deb89b65d254a12a7
 
-COCOAPODS: 1.9.2
+COCOAPODS: 1.12.1

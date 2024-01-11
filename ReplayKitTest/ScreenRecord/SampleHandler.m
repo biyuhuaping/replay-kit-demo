@@ -24,7 +24,7 @@ BOOL getSize = NO;
     
     NSLog(@"extention pid %d", getpid());
     
-    NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+    NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.yes.GanodermaDiagnosis"];
     [shared setObject:@"test value" forKey:@"test"];
     [shared synchronize];
     
@@ -72,7 +72,7 @@ BOOL getSize = NO;
             CGSize frameSize = CGSizeMake(frameW, frameH);
             
             if(!getSize) {
-                NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+                NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.yes.GanodermaDiagnosis"];
                 [shared setObject:NSStringFromCGSize(frameSize) forKey:@"frameSize"];
                 [shared synchronize];
                 getSize = YES;
@@ -83,7 +83,7 @@ BOOL getSize = NO;
             }
             
             // 推流
-//            [ZFUploadTool.shareTool sendVideoBuffer:sampleBuffer];
+            [ZFUploadTool.shareTool sendVideoBuffer:sampleBuffer];
         }
             break;
         case RPSampleBufferTypeAudioApp:

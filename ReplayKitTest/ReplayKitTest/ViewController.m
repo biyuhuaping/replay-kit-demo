@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 #import <ReplayKit/ReplayKit.h>
-#import <ZYCodeTools/ZYDeviceManager.h>
-#import <ZYImageTools/ZYMovingTracker.h>
+#import "ZYDeviceManager.h"
+#import "ZYImageTools/ZYMovingTracker.h"
+
+//#import <ZYCodeTools/ZYDeviceManager.h>
+//#import <ZYImageTools/ZYMovingTracker.h>
 
 @interface ViewController () <RPBroadcastActivityViewControllerDelegate>
 @property (nonatomic) RPSystemBroadcastPickerView *broadPickerView;
@@ -91,12 +94,12 @@ void observerMethod(CFNotificationCenterRef center, void *observer, CFStringRef 
         NSLog(@"录屏完成");
     } else if([notiName isEqualToString:@"broadcastStarted"]) {
         NSLog(@"录屏开始");
-        NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+        NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.yes.GanodermaDiagnosis"];
         NSLog(@"%@", [shared objectForKey:@"test"]);
     } else if([notiName isEqualToString:@"processSampleBuffer"]) {
         NSLog(@"processSampleBuffer");
         
-        NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.zhiyun.ZYReplayKitGroup"];
+        NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.yes.GanodermaDiagnosis"];
         NSString *faceInfo = [shared objectForKey:@"faceInfo"];
         NSString *frameSize = [shared objectForKey:@"frameSize"];
         CGRect faceRect = CGRectFromString(faceInfo);

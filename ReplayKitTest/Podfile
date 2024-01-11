@@ -1,12 +1,15 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
-source 'https://gitee.com/ZhiYunRuanJianShenChou/ZYPodSpecs.git'
-source 'https://cdn.cocoapods.org'
+#source 'https://gitee.com/ZhiYunRuanJianShenChou/ZYPodSpecs.git'
+#source 'https://cdn.cocoapods.org'
 
 target 'ReplayKitTest' do
 
   pod 'LFLiveKit-ReplayKit'
-  pod 'ZYCodeTools', '1.0.74'
+#  pod 'ZYCodeTools', '1.0.74'
+pod 'AFNetworking'
+pod 'FMDB'
+pod 'SSZipArchive'
 
 end
 

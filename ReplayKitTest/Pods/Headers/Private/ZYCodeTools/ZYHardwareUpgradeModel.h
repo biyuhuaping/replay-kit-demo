@@ -1,1 +1,0 @@
-../../../ZYCodeTools/ZYCodeTools/Other/StabilizerManager/Upgrade/Firmware/ZYHardwareUpgradeModel.h
